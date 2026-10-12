@@ -90,3 +90,7 @@ generate a domain.
 
 None of these are official, documented APIs, and they can change without notice. This project isn't affiliated
 with ESPN or Sleeper. Football only.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
