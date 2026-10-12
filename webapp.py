@@ -261,7 +261,8 @@ class Handler(BaseHTTPRequestHandler):
         for k, v in {**SECURITY_HEADERS, **(headers or {})}.items():
             self.send_header(k, v)
         self.end_headers()
-        self.wfile.write(body)
+        if self.command != "HEAD":
+            self.wfile.write(body)
 
     def _json(self, code, obj, headers=None):
         self._send(code, json.dumps(obj).encode(), "application/json", headers)
@@ -307,6 +308,9 @@ class Handler(BaseHTTPRequestHandler):
 
     # ---- routing
     def do_GET(self):
+        self._route("GET")
+
+    def do_HEAD(self):
         self._route("GET")
 
     def do_POST(self):
