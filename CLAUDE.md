@@ -23,6 +23,12 @@ there's a strong reason; it runs with `python3 webapp.py` and nothing else.
 To test against real data without hammering ESPN, put leagues in `leagues.json`, take a `--snapshot` and iterate
 with `--demo`.
 
+## Deploys
+
+The hosted version is the Railway project `espn-fantasy-dashboard`, service `web`, connected to this repo's `main`
+branch: every push to `main` builds the `Dockerfile` and deploys. A volume is mounted at `/data` (`DATA_DIR`), so
+accounts survive deploys. Check a deploy with `railway deployment list --service web`.
+
 ## Security model (keep it intact)
 
 - ESPN cookies for private leagues never touch the database or logs. The browser stores them in localStorage and
