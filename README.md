@@ -3,7 +3,7 @@
 A live dashboard for ESPN fantasy football. Create an account, paste the link to your team on ESPN, and see
 every league you play in on one page. Python 3.9+, standard library only, no build step.
 
-**Hosted version:** https://web-production-a80a3.up.railway.app
+**Hosted version:** https://espn-fantasy-football-dashboard.up.railway.app
 
 ## What it shows
 
