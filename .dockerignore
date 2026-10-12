@@ -1,0 +1,6 @@
+leagues.json
+.cache/
+snap*.json
+tests/
+.git/
+data/

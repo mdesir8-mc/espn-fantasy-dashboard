@@ -1,0 +1,5 @@
+leagues.json
+.cache/
+snap*.json
+tests/fixture.json
+data/

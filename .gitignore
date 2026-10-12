@@ -1,0 +1,7 @@
+.cache/
+leagues.json
+snap*.json
+__pycache__/
+.DS_Store
+tests/fixture.json
+data/
